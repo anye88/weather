@@ -1,4 +1,4 @@
-name "Github Actions Wether Bot"
+name: 'GitHub Actions Weather Bot'
 
 on:
   push:
@@ -24,6 +24,6 @@ jobs:
           password: ${{ secrets.MAIL_PASSWORD }}
           subject: Shanghai Weather Report (${{env.REPORT_DATE}})
           body: file://result.html
-          to: 1412027555@qq.com
+          to: yifeng.ruan@gmail.com
           from: GitHub Actions
           content_type: text/html
